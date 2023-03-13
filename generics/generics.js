@@ -81,5 +81,3 @@ class DateDifference extends BinaryOperationGenerics {
 const date1 = new MyDate(1, 12, 2022);
 const date2 = new MyDate(5, 12, 2022);
 console.log(new DateDifference(date1, date2).execute());
-class queue {
-}

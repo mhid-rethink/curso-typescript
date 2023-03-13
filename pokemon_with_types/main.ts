@@ -1,5 +1,6 @@
 const pokemonNameForSearch: string = "bulbasaur";
 const pokemonTypeForSearch: string = "grass";
+
 const resultPokemonSearchByName: Pokemon | undefined = pokemons.find(
   (pokemon: Pokemon) => pokemon.name == pokemonNameForSearch
 );
@@ -13,7 +14,8 @@ const resultPokemonWithTranslatedType: Pokemon[] = pokemons.map(
     return {
       ...pokemon,
       type: pokemon.type.map(
-        (type) => typesTranslation[type as keyof typeof typesTranslation]
+        (type: string) =>
+          typesTranslation[type as keyof typeof typesTranslation]
       ),
     };
   }

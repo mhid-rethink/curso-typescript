@@ -1,4 +1,4 @@
-type PokemonTypesAsType = {
+type TypesTranslation = {
   grass: string;
   poison: string;
   fire: string;
@@ -16,7 +16,25 @@ type PokemonTypesAsType = {
   ice: string;
   ghost: string;
 };
-const typesTranslation: PokemonTypesAsType = {
+
+type ListTypes =
+  | "grass"
+  | "poison"
+  | "fire"
+  | "flying"
+  | "water"
+  | "bug"
+  | "normal"
+  | "electric"
+  | "ground"
+  | "fairy"
+  | "fighting"
+  | "psychic"
+  | "rock"
+  | "steel"
+  | "ice"
+  | "ghost";
+const typesTranslation: TypesTranslation = {
   grass: "Planta",
   poison: "Venenoso",
   fire: "Fogo",
