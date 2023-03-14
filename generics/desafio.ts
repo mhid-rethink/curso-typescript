@@ -1,4 +1,4 @@
-class Queue<T> {
+class Queue<T extends number | string> {
   private queue: Array<T>;
 
   constructor(...args: T[]) {
@@ -15,7 +15,7 @@ class Queue<T> {
   print = (): void => console.log(this.queue);
 }
 
-const myQueue = new Queue<String>();
+const myQueue = new Queue<string>();
 
 myQueue.print();
 myQueue.join("Rafa");
